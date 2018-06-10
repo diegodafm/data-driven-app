@@ -1,0 +1,43 @@
+{
+  "name": "data-driven-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "./node_modules/webpack/bin/webpack.js --mode production",
+    "webpack-watch": "./node_modules/webpack/bin/webpack.js -w --mode development",
+    "server": "node ./src/js/server/server.js",
+    "start": "npm run webpack-watch --mode development & npm run server",
+    "build": "npm run webpack"
+  },
+  "keywords": [],
+  "author": "Diego Mendonca <diego.dafm@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-intl": "^2.4.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^8.0.3",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "express": "^4.16.3",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.0.6",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12"
+  }
+}
