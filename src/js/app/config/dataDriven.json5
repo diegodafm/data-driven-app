@@ -1,0 +1,17 @@
+{
+    "defaut.contactDetais": {
+        "title": "Contact Details",
+        "pageContent": [
+            "components.firstName",
+            "components.lastName",
+            "components.email",
+            "components.password",
+        ],
+        "components": {
+            "firstName": {},
+            "lastName": {},
+            "email": {},
+            "password": {}
+        }
+    }
+}

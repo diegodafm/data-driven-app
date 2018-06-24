@@ -8,13 +8,6 @@ const APP_DIR = path.resolve(__dirname, './src/js/app');
 const HTML_DIR = path.resolve(__dirname, './src/html');
 const languages = require('./webpack.lang.config');
 
-console.log(languages);
-// const extractSASS = new ExtractTextPlugin({ filename: 'bundle.css' })
-
-
-console.log(APP_DIR);
-
-
 module.exports = {
     context: path.resolve(__dirname, './'),
     mode: "development", // "production",
@@ -39,7 +32,10 @@ module.exports = {
                 use: {
                     loader: "babel-loader",
                     query: {
-                        presets: ['es2017', 'stage-0', 'react']
+                        presets: ['es2017', 'stage-0', 'react'],
+                        plugins: [
+                            ["transform-decorators-legacy"],
+                        ]
                     }
                 },
 
